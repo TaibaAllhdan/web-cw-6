@@ -19,12 +19,23 @@
       />
     </div>
     <div class="center">
-      <button onclick="">اختبر 🤓</button>
+      <button onclick="check()">اختبر 🤓</button>
     </div>
-    <script>
-      // قم بإنشاء الدالة هنا
-      // numberType << idقم بإظهار النتيجة النهائية باستخدام ال
-      // لا تنسى مناداة الدالة عند الضغط على الزر
+    
+      <script>
+      
+       
+
+       function check(){
+        let numbe = document.getElementById('height').value
+
+        if ((numbe %2 ) ==0) { 
+        document.getElementById('numberType').innerHTML =
+          numbe + " هو عدد زوجي";
+      } else {
+        document.getElementById('numberType').innerHTML =
+           numbe + " هو عدد فردي";}
+          }
     </script>
   </body>
 </html>
